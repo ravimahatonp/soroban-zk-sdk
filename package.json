@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "node init && tsc -p .",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .ts",
     "prepare": "npm run build"
@@ -17,7 +17,8 @@
     "eslint": "^8.0.0"
   },
   "dependencies": {
-    "snarkjs": "^0.7.0",
-    "node-fetch": "^3.0.0"
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.0.0",
+    "snarkjs": "^0.7.0"
   }
 }
